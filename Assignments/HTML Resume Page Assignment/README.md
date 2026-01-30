@@ -4,10 +4,10 @@ A single-page HTML resume built with semantic HTML tags, focusing on clarity, st
 
 ## Demo
 
-![Resume Screenshot](Assignments\screenshots\image1.png)
-![Resume Screenshot](Assignments\screenshots\image2.png)
+![Resume Screenshot](web-dev-2026\Assignments\HTML Resume Page Assignment\screenshots\image1.png)
+![Resume Screenshot](web-dev-2026\Assignments\HTML Resume Page Assignment\screenshots\image1.png)
 
-[Live Demo (GitHub Pages)](https://your-github-username.github.io/your-repo-name/) 
+[Live Demo (GitHub Pages)](https://snikhil17.github.io/web-dev-2026/Assignments/HTML%20Resume%20Page%20Assignment/) 
 
 ## Setup
 
