@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursor - The AI Code Editor</title>
-    <link rel="stylesheet" href="style_new.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,8 @@
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="nav-logo">
-                <img src="assets/logos/Cursor_Logo_0.svg" alt="Cursor" class="nav-logo-img">
+                <img src="assets/logos/Cursor_Logo_0.svg" alt="Cursor" class="nav-logo-img nav-logo-light">
+                <img src="assets/logos/Cursor_Logo_for_dark_mode.svg" alt="Cursor" class="nav-logo-img nav-logo-dark">
             </a>
             <nav class="nav-links">
                 <a href="#features">Product</a>
@@ -159,12 +160,30 @@
         <div class="container">
             <h2 class="trusted-title">Trusted every day by teams that build world-class software</h2>
             <div class="logo-row">
-                <div class="company-logo">OpenAI</div>
-                <div class="company-logo">NVIDIA</div>
-                <div class="company-logo">Stripe</div>
-                <div class="company-logo">Shopify</div>
-                <div class="company-logo">Samsung</div>
-                <div class="company-logo">Salesforce</div>
+                <div class="company-logo">
+                    <img src="assets/logos/stripe.png" alt="Stripe">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/openai.png" alt="OpenAI">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/linear.png" alt="Linear">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/datadog.png" alt="Datadog">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/nvidia.png" alt="NVIDIA">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/figma.png" alt="Figma">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/ramp.png" alt="Ramp">
+                </div>
+                <div class="company-logo">
+                    <img src="assets/logos/adobe.png" alt="Adobe">
+                </div>
             </div>
         </div>
     </section>
@@ -179,8 +198,7 @@
                     <a href="#" class="feature-link">Learn about agentic development →</a>
                 </div>
                 <div class="feature-media">
-                    <img src="assets/feature-agents.png" alt="Cursor Agent Demo" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
-                    <div class="feature-placeholder">Agent IDE Demo</div>
+                    <img src="assets/logos/Agent-turns-ideas-into-code.png" alt="Cursor Agent Demo">
                 </div>
             </div>
         </div>
@@ -196,8 +214,7 @@
                     <a href="#" class="feature-link">Learn about Tab →</a>
                 </div>
                 <div class="feature-media">
-                    <img src="assets/feature-tab.png" alt="Tab Autocomplete Demo" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
-                    <div class="feature-placeholder">Tab Autocomplete Demo</div>
+                    <img src="assets/logos/magically accurate autocomplete.png" alt="Tab Autocomplete Demo">
                 </div>
             </div>
         </div>
@@ -213,8 +230,7 @@
                     <a href="#" class="feature-link">Learn about Cursor's surfaces →</a>
                 </div>
                 <div class="feature-media">
-                    <img src="assets/feature-surfaces.png" alt="Multi-surface Integration" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
-                    <div class="feature-placeholder">Multi-Surface Integration Demo</div>
+                    <img src="assets/logos/in every tool.png" alt="Multi-surface Integration">
                 </div>
             </div>
         </div>
@@ -423,8 +439,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 Anysphere, Inc.</span>
-                <span class="footer-badge">🛡 SOC 2 Certified</span>
+                <div class="footer-left">
+                    <span>© 2026 Anysphere, Inc.</span>
+                    <span class="footer-badge">☑ SOC 2 Certified</span>
+                </div>
+                <div class="footer-right">
+                    <button class="theme-btn" onclick="document.body.classList.remove('dark-mode')" aria-label="Light mode">
+                        ☀
+                    </button>
+                    <button class="theme-btn" onclick="document.body.classList.add('dark-mode')" aria-label="Dark mode">
+                        ☾
+                    </button>
+                </div>
             </div>
         </div>
     </footer>

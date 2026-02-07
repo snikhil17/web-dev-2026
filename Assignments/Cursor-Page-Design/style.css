@@ -26,7 +26,7 @@
     --button-hover-bg: #3b3a33;
 
     --container-width: 80rem;    /* 1280px — matches --container-7xl */
-    --nav-height: 56px;
+    --nav-height: 3rem;          /* ~48px — compact like original */
 }
 
 /* === GLOBAL RESET === */
@@ -81,9 +81,7 @@ ul {
     top: 0;
     width: 100%;
     height: var(--nav-height);
-    background-color: rgba(247, 247, 244, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: var(--bg-primary);
     z-index: 1000;
     border-bottom: 1px solid var(--border-02);
 }
@@ -101,61 +99,77 @@ ul {
 }
 
 .nav-logo-img {
-    height: 20px;
+    height: 22px;
     width: auto;
+}
+
+.nav-logo-light {
+    display: block;
+}
+
+.nav-logo-dark {
+    display: none;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-links a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-primary);
     transition: color 0.2s;
 }
 
 .nav-links a:hover {
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 0.75rem;
 }
 
 .nav-signin {
-    display: inline-block;
-    padding: 6px 16px;
-    font-size: 14px;
-    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    height: 1.75rem;
+    padding: 0 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
     color: var(--text-primary);
     border: 1px solid var(--border-03);
     border-radius: 999px;
-    transition: background-color 0.2s, border-color 0.2s;
+    transition: all 0.2s;
+    line-height: 1;
 }
 
 .nav-signin:hover {
-    background-color: rgba(38, 37, 30, 0.04);
-    border-color: var(--text-primary);
+    background-color: transparent;
+    color: var(--text-secondary);
+    border-color: var(--text-secondary);
 }
 
 .btn-download {
-    display: inline-block;
-    padding: 7px 18px;
-    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    height: 1.75rem;
+    padding: 0 0.875rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: #fff;
     background-color: var(--text-primary);
     border-radius: 999px;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
+    line-height: 1;
 }
 
 .btn-download:hover {
-    background-color: var(--button-hover-bg);
+    background-color: var(--text-secondary);
+    color: #fff;
 }
 
 /* ==========================================
@@ -167,17 +181,19 @@ ul {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 720px;
     margin-bottom: 40px;
 }
 
 .hero-title {
-    font-size: 2.25rem;  /* matches --text-lg: 2.25rem */
-    font-weight: 400;    /* original uses CursorGothic Regular (weight 400) */
+    font-size: 2.125rem;
+    font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--text-primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+    max-width: 720px;
 }
 
 .btn-hero {
@@ -569,16 +585,23 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .company-logo {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text-tertiary);
-    letter-spacing: 0.02em;
-    opacity: 0.45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    min-width: 100px;
+}
+
+.company-logo img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 /* ==========================================
@@ -1017,8 +1040,41 @@ ul {
     color: rgba(255, 255, 255, 0.35);
 }
 
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .footer-badge {
     font-size: 13px;
+}
+
+.theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.theme-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* ==========================================
@@ -1120,4 +1176,119 @@ ul {
     .footer {
         display: none;
     }
+}
+
+/* ==========================================
+   DARK MODE
+   ========================================== */
+body.dark-mode {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #141414;
+    --text-primary: #f5f5f5;
+    --text-secondary: rgba(245, 245, 245, 0.6);
+    --text-tertiary: rgba(245, 245, 245, 0.4);
+    --border-01: rgba(255, 255, 255, 0.03);
+    --border-02: rgba(255, 255, 255, 0.1);
+    --border-03: rgba(255, 255, 255, 0.25);
+    --card-hex: #1a1a1a;
+    --card-hover-hex: #222222;
+    --button-hover-bg: #444444;
+}
+
+body.dark-mode .nav-logo-light {
+    display: none;
+}
+
+body.dark-mode .nav-logo-dark {
+    display: block;
+}
+
+body.dark-mode .navbar {
+    background-color: var(--bg-primary);
+    border-bottom-color: var(--border-02);
+}
+
+body.dark-mode .nav-signin {
+    color: var(--text-primary);
+    border-color: var(--border-02);
+}
+
+body.dark-mode .nav-signin:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: var(--border-03);
+}
+
+body.dark-mode .btn-download {
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+}
+
+body.dark-mode .btn-download:hover {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode .hero-demo {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1512 30%, #2a201a 60%, #1a1512 100%);
+}
+
+body.dark-mode .hero-demo::before {
+    background:
+        radial-gradient(ellipse 120% 60% at 20% 80%, rgba(60, 80, 50, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 40% at 80% 70%, rgba(100, 80, 60, 0.5) 0%, transparent 50%),
+        radial-gradient(ellipse 100% 50% at 50% 30%, rgba(80, 60, 40, 0.3) 0%, transparent 70%);
+}
+
+body.dark-mode .btn-hero {
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+}
+
+body.dark-mode .btn-hero:hover {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode .company-logo {
+    background-color: transparent;
+    border: none;
+}
+
+body.dark-mode .company-logo img {
+    border-radius: 12px;
+}
+
+body.dark-mode .card,
+body.dark-mode .testimonial-card,
+body.dark-mode .highlight-card {
+    background-color: var(--card-hex);
+    border-color: var(--border-02);
+}
+
+body.dark-mode .card:hover,
+body.dark-mode .highlight-card:hover {
+    background-color: var(--card-hover-hex);
+}
+
+body.dark-mode .btn-about {
+    color: var(--text-primary);
+    border-color: var(--border-03);
+}
+
+body.dark-mode .btn-about:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .changelog-item {
+    border-bottom-color: var(--border-02);
+}
+
+body.dark-mode .changelog-item:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+body.dark-mode .changelog-version {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .footer {
+    background-color: #000000;
 }
