@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mintlify - The Intelligent Knowledge Platform</title>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ========================================
+         SECTION 1: TOP NAVIGATION BAR
+         ======================================== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-logo">
+                <!-- Mint leaf icon only -->
+                <svg width="24" height="24" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.4725 9.60528V3.91396C18.4725 3.30323 17.977 2.81641 17.3754 2.81641H11.6867C10.7931 2.81641 9.90842 2.99342 9.08564 3.32977C8.26285 3.67497 7.51085 4.17064 6.88271 4.80793L6.83847 4.85219C6.00684 5.69305 5.41408 6.73749 5.11328 7.88815C5.65296 7.74653 6.2103 7.67572 6.76767 7.66687C8.25399 7.64916 9.71378 8.12713 10.8993 9.02111C11.9698 9.81771 12.7837 10.9153 13.2261 12.181C13.6861 13.4644 13.7392 14.8629 13.3942 16.1817C14.5354 15.8808 15.5883 15.2878 16.4288 14.4558L16.473 14.4115C17.1011 13.7831 17.6054 13.0307 17.9504 12.2075C18.2955 11.3844 18.4636 10.4993 18.4636 9.60528H18.4725Z" fill="#18E299"/>
+                    <path d="M4.9434 9.50941C4.95221 7.76347 5.64849 6.08807 6.87361 4.83594L2.14058 9.57113C2.12296 9.58876 2.10532 9.59758 2.08769 9.61522C0.933084 10.7615 0.23681 12.2959 0.122231 13.9183C0.0164654 15.435 0.413078 16.934 1.2592 18.1862C1.33991 18.3056 1.5589 18.3449 1.68229 18.2303L4.58202 15.338C5.48985 14.4298 5.7719 13.0806 5.34002 11.8726C5.06679 11.1231 4.93459 10.3207 4.9434 9.50941Z" fill="#0C8C5E"/>
+                    <path d="M16.4445 14.4121C15.5367 15.3027 14.3997 15.92 13.1658 16.1933C11.923 16.4667 10.6362 16.3873 9.43757 15.9641C9.43757 15.9641 9.42874 15.9641 9.41992 15.9641C8.21243 15.532 6.86394 15.8141 5.95612 16.7136L3.05634 19.6058C2.93295 19.7293 2.95057 19.9321 3.10041 20.0291C4.35197 20.8668 5.85035 21.2724 7.36632 21.1666C8.98806 21.052 10.5128 20.3553 11.6674 19.2002L11.7115 19.1561L16.4445 14.4209V14.4121Z" fill="#0C8C5E"/>
+                </svg>
+                <span class="navbar-logo-text">mintlify</span>
+            </a>
+
+            <div class="navbar-links">
+                <a href="#" class="navbar-link">Resources</a>
+                <a href="#" class="navbar-link">Documentation</a>
+                <a href="#" class="navbar-link">Customers</a>
+                <a href="#" class="navbar-link">Blog</a>
+                <a href="#" class="navbar-link">Pricing</a>
+            </div>
+
+            <div class="navbar-actions">
+                <a href="#" class="btn btn-ghost">Contact sales</a>
+                <a href="#" class="btn btn-primary">Start for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         SECTION 2: HERO SECTION
+         ======================================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-new">NEW</span>
+                    <span>Self-updating docs with agent suggestions</span>
+                    <span style="margin-left: 4px;">&#8594;</span>
+                </div>
+
+                <h1 class="hero-title">
+                    The Intelligent <span class="hero-title-highlight">Knowledge<br>Platform</span>
+                </h1>
+
+                <p class="hero-description">
+                    Helping teams create and maintain world-class<br>
+                    documentation built for both humans and AI
+                </p>
+
+                <div class="hero-cta">
+                    <input type="email" class="hero-input" placeholder="Email address">
+                    <button class="hero-btn">Start now</button>
+                </div>
+            </div>
+
+            <!-- Background image handles the illustration -->
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 3: DOCUMENTATION PREVIEW
+         ======================================== -->
+    <section class="docs-preview">
+        <div class="container">
+            <div class="docs-preview-container">
+                <!-- Left Sidebar -->
+                <aside class="docs-sidebar">
+                    <div class="docs-sidebar-header">
+                        <div class="docs-sidebar-logo"></div>
+                        <span class="docs-sidebar-title">mintlify</span>
+                    </div>
+
+                    <nav class="docs-nav-section">
+                        <a href="#" class="docs-nav-item">
+                            <span class="docs-nav-icon">&#9733;</span>
+                            Ask Assistant
+                        </a>
+                        <a href="#" class="docs-nav-item active">
+                            <span class="docs-nav-icon">&#9632;</span>
+                            Quickstart
+                        </a>
+                        <a href="#" class="docs-nav-item">
+                            <span class="docs-nav-icon">&#9881;</span>
+                            Global Settings
+                        </a>
+                        <a href="#" class="docs-nav-item">
+                            <span class="docs-nav-icon">&#9889;</span>
+                            AI Optimization
+                        </a>
+                        <a href="#" class="docs-nav-item">
+                            <span class="docs-nav-icon">&#9635;</span>
+                            Components
+                        </a>
+                        <a href="#" class="docs-nav-item">
+                            <span class="docs-nav-icon">&#9778;</span>
+                            Themes
+                        </a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="docs-main">
+                    <header class="docs-header">
+                        <div class="docs-tabs">
+                            <span class="docs-tab active">Guides</span>
+                            <span class="docs-tab">API Reference</span>
+                            <span class="docs-tab">Changelog</span>
+                        </div>
+
+                        <div style="display: flex; align-items: center;">
+                            <div class="docs-search">
+                                <span>&#128269;</span>
+                                <span>Search or ask</span>
+                                <span class="docs-search-shortcut">&#8984;K</span>
+                            </div>
+                            <button class="docs-ai-btn">
+                                <span>&#10024;</span>
+                                Ask AI
+                            </button>
+                        </div>
+                    </header>
+
+                    <div class="docs-content-header">
+                        <p class="docs-breadcrumb">Getting Started</p>
+                        <h1 class="docs-page-title">Quickstart Guide</h1>
+                        <p class="docs-page-description">Start building intelligent documentation in under five minutes</p>
+                    </div>
+
+                    <div class="docs-cards">
+                        <div class="docs-card">
+                            <div class="docs-card-icon docs-card-icon-teal">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#0D9373" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3 class="docs-card-title">Quickstart</h3>
+                            <p class="docs-card-description">Deploy your first docs site in minutes with our step-by-step guide.</p>
+                        </div>
+
+                        <div class="docs-card">
+                            <div class="docs-card-icon docs-card-icon-teal">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" stroke="#0D9373" stroke-width="2"/>
+                                    <path d="M9 12h6M12 9v6" stroke="#0D9373" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="docs-card-title">Installation</h3>
+                            <p class="docs-card-description">Install the CLI to preview and develop your docs locally.</p>
+                        </div>
+
+                        <div class="docs-card">
+                            <div class="docs-card-icon docs-card-icon-teal">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="#0D9373" stroke-width="2"/>
+                                    <path d="M7 7h10M7 12h6M7 17h8" stroke="#0D9373" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="docs-card-title">Web editor</h3>
+                            <p class="docs-card-description">Write and update content and manage content with our browser-based editor.</p>
+                        </div>
+
+                        <div class="docs-card">
+                            <div class="docs-card-icon docs-card-icon-teal">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="3" width="7" height="7" rx="1" stroke="#0D9373" stroke-width="2"/>
+                                    <rect x="14" y="3" width="7" height="7" rx="1" stroke="#0D9373" stroke-width="2"/>
+                                    <rect x="3" y="14" width="7" height="7" rx="1" stroke="#0D9373" stroke-width="2"/>
+                                    <rect x="14" y="14" width="7" height="7" rx="1" stroke="#0D9373" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="docs-card-title">Components</h3>
+                            <p class="docs-card-description">Start SDK, interactive docs with our ready to use components.</p>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- Right Sidebar - Table of Contents -->
+                <aside class="docs-toc">
+                    <h4 class="docs-toc-title">On this page</h4>
+                    <a href="#" class="docs-toc-item active">Introduction</a>
+                    <a href="#" class="docs-toc-item">Getting started</a>
+                    <a href="#" class="docs-toc-item">AI optimization</a>
+                    <a href="#" class="docs-toc-item">Themes</a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 4: COMPANY LOGOS
+         ======================================== -->
+    <section class="trusted-by">
+        <div class="container">
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <span class="company-logo company-logo-caps">ANTHROPIC</span>
+                </div>
+                <div class="logo-item">
+                    <span class="company-logo company-logo-coinbase">coinbase</span>
+                </div>
+                <div class="logo-item">
+                    <span class="company-logo company-logo-microsoft">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="1" y="1" width="10" height="10" fill="#F25022"/>
+                            <rect x="13" y="1" width="10" height="10" fill="#7FBA00"/>
+                            <rect x="1" y="13" width="10" height="10" fill="#00A4EF"/>
+                            <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
+                        </svg>
+                        Microsoft
+                    </span>
+                </div>
+                <div class="logo-item">
+                    <span class="company-logo company-logo-perplexity">perplexity</span>
+                </div>
+            </div>
+            <div class="logo-grid logo-grid-row2">
+                <div class="logo-item">
+                    <span class="company-logo company-logo-hubspot">HubSpot</span>
+                </div>
+                <div class="logo-item">
+                    <span class="company-logo company-logo-x">X</span>
+                </div>
+                <div class="logo-item">
+                    <span class="company-logo company-logo-paypal">PayPal</span>
+                </div>
+                <div class="logo-item">
+                    <span class="company-logo company-logo-lovable">Lovable</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 5: BUILT FOR THE INTELLIGENCE AGE
+         ======================================== -->
+    <section class="intelligence-age">
+        <div class="container">
+            <div class="intelligence-header">
+                <h2 class="intelligence-title">Built for the intelligence age</h2>
+                <p class="intelligence-subtitle">
+                    Integrate AI into every part of your docs lifecycle. Woven into how your<br>
+                    knowledge is written, maintained, and understood by both users and LLMs.
+                </p>
+            </div>
+
+            <div class="intelligence-grid">
+                <!-- Card 1: Built for both people and AI -->
+                <div class="intelligence-card">
+                    <div class="intelligence-card-badge">LLMS.TXT & MCP</div>
+                    <h3 class="intelligence-card-title">Built for both people and AI</h3>
+                    <p class="intelligence-card-description">
+                        Ensure your product shows up in the AI workflows users already rely on.
+                        We support llms.txt, MCP, and whatever comes next.
+                    </p>
+                </div>
+
+                <!-- Card 2: Self-updating knowledge management -->
+                <div class="intelligence-card">
+                    <div class="intelligence-card-badge">AGENT</div>
+                    <h3 class="intelligence-card-title">Self-updating knowledge management</h3>
+                    <p class="intelligence-card-description">
+                        Draft, edit, and maintain content with a context-aware agent. Move faster and
+                        more consistently without the documentation debt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 5B: INTELLIGENT ASSISTANCE
+         ======================================== -->
+    <section class="assistant-section">
+        <div class="container">
+            <div class="assistant-header">
+                <p class="assistant-label">ASSISTANT</p>
+                <h2 class="assistant-title">Intelligent assistance for your users</h2>
+                <p class="assistant-subtitle">
+                    Turn every documentation visit into a guided conversation. Your<br>
+                    AI assistant understands context and delivers what users need.
+                </p>
+            </div>
+            <div class="assistant-mockup">
+                <div class="mockup-grid">
+                    <div class="mockup-card mockup-card-main">
+                        <div class="mockup-card-header">QUICK START GUIDE</div>
+                        <div class="mockup-lines">
+                            <div class="mockup-line mockup-line-green"></div>
+                            <div class="mockup-line mockup-line-green mockup-line-short"></div>
+                        </div>
+                        <div class="mockup-buttons">
+                            <div class="mockup-btn"></div>
+                            <div class="mockup-btn"></div>
+                            <div class="mockup-btn"></div>
+                        </div>
+                    </div>
+                    <div class="mockup-card mockup-card-chat">
+                        <div class="mockup-chat-bubble"></div>
+                        <div class="mockup-chat-bubble mockup-chat-bubble-green"></div>
+                        <div class="mockup-chat-bubble"></div>
+                        <div class="mockup-chat-bubble mockup-chat-bubble-green"></div>
+                        <div class="mockup-chat-input">Ask AI anything...</div>
+                    </div>
+                    <div class="mockup-card mockup-card-side">
+                        <div class="mockup-card-header">API REFERENCE</div>
+                        <div class="mockup-lines">
+                            <div class="mockup-line"></div>
+                            <div class="mockup-line"></div>
+                            <div class="mockup-line mockup-line-short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 5B: FEATURE HIGHLIGHTS (Keep remaining features)
+         ======================================== -->
+    <section class="features">
+        <div class="container">
+            <!-- Feature Block 1 -->
+            <div class="feature-block">
+                <div class="feature-content">
+                    <p class="feature-label">Beautiful by Default</p>
+                    <h2 class="feature-title">Documentation that looks as good as your product</h2>
+                    <p class="feature-description">
+                        Out-of-the-box beautiful documentation with customizable themes.
+                        Your docs will match your brand perfectly without any design work.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Custom themes and branding
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Dark and light mode support
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Responsive on all devices
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="500" height="350" rx="16" fill="#f8fafc"/>
+                        <rect x="20" y="20" width="460" height="310" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+                        <rect x="40" y="40" width="120" height="20" rx="4" fill="#0D9373"/>
+                        <rect x="40" y="80" width="200" height="12" rx="2" fill="#e2e8f0"/>
+                        <rect x="40" y="100" width="160" height="12" rx="2" fill="#e2e8f0"/>
+                        <rect x="40" y="140" width="420" height="80" rx="8" fill="#f1f5f9"/>
+                        <rect x="40" y="240" width="200" height="60" rx="8" fill="#f1f5f9"/>
+                        <rect x="260" y="240" width="200" height="60" rx="8" fill="#f1f5f9"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Feature Block 2 -->
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <p class="feature-label">AI-Powered Search</p>
+                    <h2 class="feature-title">Let users find answers instantly with AI</h2>
+                    <p class="feature-description">
+                        Built-in AI assistant understands your documentation and provides
+                        accurate answers to user questions in natural language.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Natural language questions
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Context-aware responses
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Automatic source citations
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="500" height="350" rx="16" fill="#f8fafc"/>
+                        <rect x="20" y="20" width="460" height="310" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+                        <!-- Search bar -->
+                        <rect x="40" y="40" width="420" height="50" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+                        <circle cx="70" cy="65" r="12" stroke="#64748b" stroke-width="2" fill="none"/>
+                        <line x1="79" y1="74" x2="86" y2="81" stroke="#64748b" stroke-width="2"/>
+                        <text x="100" y="70" font-family="Inter" font-size="14" fill="#64748b">Ask anything about your docs...</text>
+                        <!-- AI Response -->
+                        <rect x="40" y="110" width="420" height="200" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+                        <circle cx="70" cy="140" r="16" fill="#0D9373"/>
+                        <text x="65" y="145" font-family="Inter" font-size="12" fill="white">AI</text>
+                        <rect x="100" y="130" width="340" height="12" rx="2" fill="#d1fae5"/>
+                        <rect x="100" y="150" width="280" height="12" rx="2" fill="#d1fae5"/>
+                        <rect x="100" y="170" width="320" height="12" rx="2" fill="#d1fae5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Feature Block 3 -->
+            <div class="feature-block">
+                <div class="feature-content">
+                    <p class="feature-label">Developer Experience</p>
+                    <h2 class="feature-title">Write docs in MDX with live preview</h2>
+                    <p class="feature-description">
+                        Use the tools you already know. Write documentation in Markdown
+                        with JSX components, and see changes instantly.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            MDX support with components
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Git-based workflow
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-list-icon">&#10003;</span>
+                            Instant preview and hot reload
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="500" height="350" rx="16" fill="#1e293b"/>
+                        <rect x="20" y="20" width="460" height="310" rx="12" fill="#0f172a"/>
+                        <!-- Code editor look -->
+                        <circle cx="45" cy="40" r="6" fill="#ef4444"/>
+                        <circle cx="65" cy="40" r="6" fill="#fbbf24"/>
+                        <circle cx="85" cy="40" r="6" fill="#22c55e"/>
+                        <text x="40" y="80" font-family="monospace" font-size="12" fill="#64748b"># Welcome</text>
+                        <text x="40" y="100" font-family="monospace" font-size="12" fill="#94a3b8">This is your **new** doc.</text>
+                        <text x="40" y="140" font-family="monospace" font-size="12" fill="#0D9373">&lt;CodeBlock</text>
+                        <text x="40" y="160" font-family="monospace" font-size="12" fill="#94a3b8">  language="javascript"</text>
+                        <text x="40" y="180" font-family="monospace" font-size="12" fill="#0D9373">/&gt;</text>
+                        <text x="40" y="220" font-family="monospace" font-size="12" fill="#64748b">## Next Steps</text>
+                        <text x="40" y="240" font-family="monospace" font-size="12" fill="#94a3b8">Check out the guides.</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 6: UI PREVIEW / INTELLIGENT ASSISTANT
+         ======================================== -->
+    <section class="ui-preview">
+        <div class="container">
+            <div class="ui-preview-header">
+                <h2 class="ui-preview-title">Meet your intelligent documentation assistant</h2>
+                <p class="ui-preview-description">
+                    An AI assistant that understands your entire knowledge base and helps
+                    users find exactly what they need.
+                </p>
+            </div>
+
+            <div class="ui-preview-mockup">
+                <svg width="1000" height="600" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Browser frame -->
+                    <rect width="1000" height="600" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+                    <!-- Browser header -->
+                    <rect x="0" y="0" width="1000" height="50" rx="12" fill="#f8fafc"/>
+                    <rect x="0" y="38" width="1000" height="12" fill="#f8fafc"/>
+                    <circle cx="30" cy="25" r="6" fill="#ef4444"/>
+                    <circle cx="50" cy="25" r="6" fill="#fbbf24"/>
+                    <circle cx="70" cy="25" r="6" fill="#22c55e"/>
+                    <!-- URL bar -->
+                    <rect x="200" y="12" width="600" height="26" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+                    <text x="220" y="30" font-family="Inter" font-size="12" fill="#64748b">docs.mintlify.com</text>
+
+                    <!-- Sidebar -->
+                    <rect x="0" y="50" width="250" height="550" fill="#f8fafc"/>
+                    <rect x="20" y="70" width="100" height="24" rx="4" fill="#0D9373"/>
+                    <rect x="20" y="110" width="180" height="12" rx="2" fill="#e2e8f0"/>
+                    <rect x="20" y="130" width="160" height="12" rx="2" fill="#e2e8f0"/>
+                    <rect x="20" y="150" width="140" height="12" rx="2" fill="#e2e8f0"/>
+                    <rect x="20" y="190" width="120" height="10" rx="2" fill="#94a3b8"/>
+                    <rect x="20" y="210" width="180" height="12" rx="2" fill="#e2e8f0"/>
+                    <rect x="20" y="230" width="160" height="12" rx="2" fill="#e2e8f0"/>
+
+                    <!-- Main content area -->
+                    <rect x="270" y="70" width="500" height="40" rx="4" fill="#0D9373"/>
+                    <text x="290" y="98" font-family="Inter" font-size="20" font-weight="600" fill="white">Documentation</text>
+
+                    <!-- Chat interface overlay -->
+                    <rect x="300" y="140" width="500" height="400" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+                    <text x="330" y="180" font-family="Inter" font-size="16" font-weight="600" fill="#0f172a">Ask AI Assistant</text>
+
+                    <!-- User message -->
+                    <rect x="380" y="210" width="380" height="50" rx="12" fill="#f1f5f9"/>
+                    <text x="400" y="240" font-family="Inter" font-size="13" fill="#0f172a">How do I configure custom themes?</text>
+
+                    <!-- AI response -->
+                    <circle cx="350" cy="300" r="18" fill="#0D9373"/>
+                    <text x="343" y="305" font-family="Inter" font-size="12" font-weight="600" fill="white">AI</text>
+                    <rect x="380" y="280" width="380" height="120" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+                    <text x="400" y="310" font-family="Inter" font-size="13" fill="#0f172a">To configure custom themes:</text>
+                    <text x="400" y="335" font-family="Inter" font-size="13" fill="#475569">1. Open your mint.json file</text>
+                    <text x="400" y="360" font-family="Inter" font-size="13" fill="#475569">2. Add the "theme" property</text>
+                    <text x="400" y="385" font-family="Inter" font-size="13" fill="#475569">3. Set your custom colors</text>
+
+                    <!-- Input field -->
+                    <rect x="320" y="470" width="440" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+                    <text x="340" y="500" font-family="Inter" font-size="14" fill="#94a3b8">Ask a follow-up question...</text>
+
+                    <!-- Right sidebar -->
+                    <rect x="820" y="70" width="160" height="200" fill="#ffffff"/>
+                    <text x="840" y="100" font-family="Inter" font-size="11" font-weight="600" fill="#94a3b8">ON THIS PAGE</text>
+                    <text x="840" y="130" font-family="Inter" font-size="13" fill="#0D9373">Introduction</text>
+                    <text x="840" y="155" font-family="Inter" font-size="13" fill="#64748b">Getting Started</text>
+                    <text x="840" y="180" font-family="Inter" font-size="13" fill="#64748b">Configuration</text>
+                    <text x="840" y="205" font-family="Inter" font-size="13" fill="#64748b">Examples</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 7: ENTERPRISE FEATURES
+         ======================================== -->
+    <section class="enterprise">
+        <div class="container">
+            <div class="enterprise-header">
+                <h2 class="enterprise-title">Bring intelligence to enterprise knowledge</h2>
+                <p class="enterprise-description">
+                    Modernize without the rebuild with enterprise-grade professional service & security.
+                </p>
+                <a href="#" class="btn-enterprise">Explore for enterprise</a>
+            </div>
+
+            <div class="enterprise-features">
+                <div class="enterprise-feature">
+                    <div class="enterprise-feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 16.8 15.2 15 13 15H5C2.8 15 1 16.8 1 19V21" stroke="#18e299" stroke-width="2"/>
+                            <circle cx="9" cy="7" r="4" stroke="#18e299" stroke-width="2" fill="none"/>
+                            <path d="M23 21V19C23 17.4 22.2 16 21 15.4" stroke="#18e299" stroke-width="2"/>
+                            <path d="M16 3.4C17.2 4 18 5.4 18 7C18 8.6 17.2 10 16 10.6" stroke="#18e299" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="enterprise-feature-title">Build with partnership</h3>
+                    <p class="enterprise-feature-description">
+                        Direct, white-glove access to our documentation experts. Dedicated migration support and guidance tailored to your setup, and elevated support SLAs.
+                    </p>
+                </div>
+
+                <div class="enterprise-feature">
+                    <div class="enterprise-feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L4 6V12C4 16.4 7.4 20.5 12 22C16.6 20.5 20 16.4 20 12V6L12 2Z" stroke="#18e299" stroke-width="2" fill="none"/>
+                            <path d="M9 12L11 14L15 10" stroke="#18e299" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="enterprise-feature-title">Compliance and access control</h3>
+                    <p class="enterprise-feature-description">
+                        Compliant with SOC 2, and in the process for ISO27001 and GDPR compliance to meet your internal and external data requirements. Secure access and provisioning with SAML-based SSO.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FEATURED CUSTOMER STORY
+         ======================================== -->
+    <section class="featured-story">
+        <div class="container">
+            <div class="featured-story-card">
+                <div class="featured-story-content">
+                    <p class="featured-story-label">CUSTOMER STORY</p>
+                    <h2 class="featured-story-title">See how Anthropic accelerates AI development with Mintlify</h2>
+                    <a href="#" class="featured-story-link">Read story →</a>
+                    
+                    <div class="featured-story-stats">
+                        <div class="featured-stat">
+                            <h3 class="featured-stat-number">2M+</h3>
+                            <p class="featured-stat-label">Monthly active developers</p>
+                        </div>
+                        <div class="featured-stat">
+                            <h3 class="featured-stat-number">3+</h3>
+                            <p class="featured-stat-label">Products serviced: Claude API, MCP, and Claude Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-story-visual">
+                    <div class="featured-story-artwork">
+                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Stylized arch illustration -->
+                            <defs>
+                                <linearGradient id="archGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="archGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#DC2626;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#991B1B;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Mountain landscape background -->
+                            <path d="M0 200 L100 150 L200 180 L300 140 L400 170 L400 300 L0 300 Z" fill="#1e293b" opacity="0.3"/>
+                            <path d="M0 220 L80 180 L180 200 L280 160 L400 190 L400 300 L0 300 Z" fill="#1e293b" opacity="0.5"/>
+                            <!-- Stylized arch -->
+                            <ellipse cx="200" cy="150" rx="60" ry="140" fill="url(#archGrad1)"/>
+                            <ellipse cx="200" cy="150" rx="40" ry="140" fill="url(#archGrad2)"/>
+                            <ellipse cx="200" cy="150" rx="20" ry="140" fill="#7C2D12"/>
+                            <!-- Ground shadow -->
+                            <ellipse cx="200" cy="270" rx="100" ry="20" fill="#000000" opacity="0.2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 8: CASE STUDIES / CUSTOMER STORIES
+         ======================================== -->
+    <section class="case-studies">
+        <div class="container">
+            <div class="case-studies-header">
+                <p class="case-studies-label">CUSTOMERS</p>
+                <h2 class="case-studies-title">Unlock knowledge for any industry</h2>
+                <p class="case-studies-description">
+                    From frontier AI companies to consumer brands, leaders across industries scale with Mintlify.
+                </p>
+            </div>
+
+            <div class="case-studies-grid">
+                <article class="case-study-card">
+                    <div class="case-study-image" style="background: linear-gradient(135deg, #0D7377 0%, #14FFEC 100%);">
+                        <div class="case-study-brand">
+                            <svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Inter" font-size="32" font-weight="700" fill="#ffffff">perplexity</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-content-title">How Perplexity transformed its documentation into an AI-native developer experience that matches their cutting-edge product</h3>
+                        <a href="#" class="case-study-read-more">Read story →</a>
+                    </div>
+                </article>
+
+                <article class="case-study-card">
+                    <div class="case-study-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #404040 100%);">
+                        <div class="case-study-brand">
+                            <svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Inter" font-size="48" font-weight="700" fill="#ffffff">X</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-content-title">How X is using Mintlify to power the developer experience for the global town square</h3>
+                        <a href="#" class="case-study-read-more">Read story →</a>
+                    </div>
+                </article>
+
+                <article class="case-study-card">
+                    <div class="case-study-image" style="background: linear-gradient(135deg, #00D9C0 0%, #4DFFD2 100%);">
+                        <div class="case-study-brand">
+                            <svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Inter" font-size="48" font-weight="700" fill="#1a1a1a">Kalshi</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-content-title">How Kalshi helps developers discover what's possible faster and ultimately drive broader adoption</h3>
+                        <a href="#" class="case-study-read-more">Read story →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 9: FINAL CALL-TO-ACTION
+         ======================================== -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="final-cta-title">Make documentation your winning advantage</h2>
+            <p class="final-cta-description">
+                Join the leaders of tomorrow to future proof your documentation today.
+            </p>
+            <div class="final-cta-buttons">
+                <a href="#" class="btn-cta-primary">Get started for free</a>
+                <a href="#" class="btn-cta-secondary">Get a demo</a>
+            </div>
+            
+            <div class="final-cta-features">
+                <div class="final-cta-feature">
+                    <div class="final-cta-feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="rgba(24, 226, 153, 0.1)"/>
+                            <path d="M16 8V16L20 20" stroke="#18E299" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="7" stroke="#18E299" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="final-cta-feature-title">Pricing on your terms</h3>
+                    <p class="final-cta-feature-desc">Pick the plan that works best for you</p>
+                    <a href="#" class="final-cta-feature-link">Pricing details →</a>
+                </div>
+                
+                <div class="final-cta-feature">
+                    <div class="final-cta-feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="rgba(24, 226, 153, 0.1)"/>
+                            <rect x="10" y="10" width="12" height="12" rx="2" stroke="#18E299" stroke-width="2" fill="none"/>
+                            <path d="M14 14H18" stroke="#18E299" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 16H18" stroke="#18E299" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 18H16" stroke="#18E299" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="final-cta-feature-title">Start building</h3>
+                    <p class="final-cta-feature-desc">Deploy your documentation in minutes</p>
+                    <a href="#" class="final-cta-feature-link">Quickstart →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 10: FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.4725 9.60528V3.91396C18.4725 3.30323 17.977 2.81641 17.3754 2.81641H11.6867C10.7931 2.81641 9.90842 2.99342 9.08564 3.32977C8.26285 3.67497 7.51085 4.17064 6.88271 4.80793L6.83847 4.85219C6.00684 5.69305 5.41408 6.73749 5.11328 7.88815C5.65296 7.74653 6.2103 7.67572 6.76767 7.66687C8.25399 7.64916 9.71378 8.12713 10.8993 9.02111C11.9698 9.81771 12.7837 10.9153 13.2261 12.181C13.6861 13.4644 13.7392 14.8629 13.3942 16.1817C14.5354 15.8808 15.5883 15.2878 16.4288 14.4558L16.473 14.4115C17.1011 13.7831 17.6054 13.0307 17.9504 12.2075C18.2955 11.3844 18.4636 10.4993 18.4636 9.60528H18.4725Z" fill="#18E299"/>
+                            <path d="M4.9434 9.50941C4.95221 7.76347 5.64849 6.08807 6.87361 4.83594L2.14058 9.57113C2.12296 9.58876 2.10532 9.59758 2.08769 9.61522C0.933084 10.7615 0.23681 12.2959 0.122231 13.9183C0.0164654 15.435 0.413078 16.934 1.2592 18.1862C1.33991 18.3056 1.5589 18.3449 1.68229 18.2303L4.58202 15.338C5.48985 14.4298 5.7719 13.0806 5.34002 11.8726C5.06679 11.1231 4.93459 10.3207 4.9434 9.50941Z" fill="#0C8C5E"/>
+                            <path d="M16.4445 14.4121C15.5367 15.3027 14.3997 15.92 13.1658 16.1933C11.923 16.4667 10.6362 16.3873 9.43757 15.9641C9.43757 15.9641 9.42874 15.9641 9.41992 15.9641C8.21243 15.532 6.86394 15.8141 5.95612 16.7136L3.05634 19.6058C2.93295 19.7293 2.95057 19.9321 3.10041 20.0291C4.35197 20.8668 5.85035 21.2724 7.36632 21.1666C8.98806 21.052 10.5128 20.3553 11.6674 19.2002L11.7115 19.1561L16.4445 14.4209V14.4121Z" fill="#0C8C5E"/>
+                        </svg>
+                        <span class="footer-logo-text">mintlify</span>
+                    </div>
+                    <p class="footer-tagline">
+                        The intelligent knowledge platform.<br>
+                        Beautiful documentation that developers love.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">EXPLORE</h4>
+                    <a href="#" class="footer-link">Startups</a>
+                    <a href="#" class="footer-link">Enterprise</a>
+                    <a href="#" class="footer-link">Switch</a>
+                    <a href="#" class="footer-link">OSS Program</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">RESOURCES</h4>
+                    <a href="#" class="footer-link">Customers</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Pricing</a>
+                    <a href="#" class="footer-link">Guides</a>
+                    <a href="#" class="footer-link">Feature Requests</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">DOCUMENTATION</h4>
+                    <a href="#" class="footer-link">Getting Started</a>
+                    <a href="#" class="footer-link">API Reference</a>
+                    <a href="#" class="footer-link">Components</a>
+                    <a href="#" class="footer-link">Changelog</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">COMPANY</h4>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Wall of Love</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-column-title">LEGAL</h4>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Responsible Disclosure</a>
+                    <a href="#" class="footer-link">Terms Of Service</a>
+                    <a href="#" class="footer-link">Security</a>
+                    <a href="#" class="footer-link">DSR/DSAR</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <span class="footer-status">
+                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" fill="#18E299"/>
+                        </svg>
+                        All systems normal
+                    </span>
+                    <p class="footer-copyright">&copy; 2026 Mintlify, Inc.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link" title="X (Twitter)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link" title="Discord">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        
+        themeToggle.addEventListener('click', function() {
+            const theme = html.getAttribute('data-theme');
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
